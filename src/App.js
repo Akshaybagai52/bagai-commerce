@@ -4,7 +4,7 @@ import Home from "./components/routes/home/Home";
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/routes/navigation/Navigation";
 import Shop from "./components/routes/shop/Shop";
-import SignIn from "./components/routes/signin/SignIn";
+import Authentication from "./components/routes/authentication/Authentication";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
